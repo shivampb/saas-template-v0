@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireAssess — AI-Powered Talent Assessment Platform</title>
+  <meta name="description" content="HireAssess helps companies identify top talent with AI-driven assessments, skill evaluations, and data-backed hiring decisions. Hire smarter, faster." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logo">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+            <path d="M10 16L14 20L22 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+                <stop stop-color="#3B82F6" />
+                <stop offset="1" stop-color="#06B6D4" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">HireAssess</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost" id="btn-login">Log In</a>
+        <a href="#" class="btn-primary btn-sm" id="btn-start-free">Start Free Trial</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content reveal-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Trusted by 2,500+ companies worldwide</span>
+        </div>
+        <h1 class="hero-title">
+          Hire the <span class="gradient-text">right talent</span><br />
+          with data-driven assessments
+        </h1>
+        <p class="hero-subtitle">
+          Eliminate guesswork from hiring. Our AI-powered platform evaluates candidates' real skills through customizable assessments, live coding challenges, and behavioral analysis — so you build teams that actually perform.
+        </p>
+        <div class="hero-cta">
+          <a href="#" class="btn-primary btn-lg" id="hero-cta-start">
+            Start Free Trial
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#" class="btn-outline btn-lg" id="hero-cta-demo">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5" />
+              <path d="M8.5 7.5L13 10L8.5 12.5V7.5Z" fill="currentColor" />
+            </svg>
+            Watch Demo
+          </a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <div class="avatar" style="background: linear-gradient(135deg, #f472b6, #22d3ee);">A</div>
+            <div class="avatar" style="background: linear-gradient(135deg, #60a5fa, #34d399);">M</div>
+            <div class="avatar" style="background: linear-gradient(135deg, #fbbf24, #f97316);">S</div>
+            <div class="avatar" style="background: linear-gradient(135deg, #22D3EE, #3B82F6);">K</div>
+            <div class="avatar avatar-count">+2k</div>
+          </div>
+          <p class="social-proof-text">Join <strong>2,500+</strong> HR teams already hiring smarter</p>
+        </div>
+      </div>
+      <div class="hero-visual reveal-up" style="--delay: 0.2s">
+        <div class="dashboard-mockup">
+          <div class="mockup-topbar">
+            <div class="mockup-dots">
+              <span style="background:#FF6B6B"></span>
+              <span style="background:#FFD93D"></span>
+              <span style="background:#6BCB77"></span>
+            </div>
+            <div class="mockup-url">app.hireassess.io/dashboard</div>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-sidebar">
+              <div class="sidebar-item active">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="1" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="1" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="9" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+                Dashboard
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 14a6 6 0 0112 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Candidates
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 8h12M2 13h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Assessments
+              </div>
+              <div class="sidebar-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 8A6 6 0 112 8a6 6 0 0112 0z" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Reports
+              </div>
+            </div>
+            <div class="mockup-main">
+              <div class="mockup-stats">
+                <div class="stat-card">
+                  <div class="stat-number" style="color:#3B82F6">248</div>
+                  <div class="stat-label">Active Candidates</div>
+                  <div class="stat-change positive">↑ 12%</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" style="color:#10B981">89%</div>
+                  <div class="stat-label">Completion Rate</div>
+                  <div class="stat-change positive">↑ 5%</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" style="color:#F59E0B">4.2d</div>
+                  <div class="stat-label">Avg. Time to Hire</div>
+                  <div class="stat-change positive">↓ 18%</div>
+                </div>
+              </div>
+              <div class="mockup-chart">
+                <div class="chart-header">Assessment Performance</div>
+                <div class="chart-bars">
+                  <div class="chart-bar" style="--h:70%; --color:#3B82F6"><span>Mon</span></div>
+                  <div class="chart-bar" style="--h:85%; --color:#06B6D4"><span>Tue</span></div>
+                  <div class="chart-bar" style="--h:60%; --color:#22D3EE"><span>Wed</span></div>
+                  <div class="chart-bar" style="--h:90%; --color:#3B82F6"><span>Thu</span></div>
+                  <div class="chart-bar" style="--h:75%; --color:#06B6D4"><span>Fri</span></div>
+                  <div class="chart-bar" style="--h:50%; --color:#22D3EE"><span>Sat</span></div>
+                  <div class="chart-bar" style="--h:65%; --color:#3B82F6"><span>Sun</span></div>
+                </div>
+              </div>
+              <div class="mockup-candidates">
+                <div class="cand-row">
+                  <div class="cand-avatar" style="background:linear-gradient(135deg,#f472b6,#ec4899)">S</div>
+                  <div class="cand-info">
+                    <div class="cand-name">Sarah Chen</div>
+                    <div class="cand-role">Frontend Developer</div>
+                  </div>
+                  <div class="cand-score high">92/100</div>
+                </div>
+                <div class="cand-row">
+                  <div class="cand-avatar" style="background:linear-gradient(135deg,#60a5fa,#3b82f6)">J</div>
+                  <div class="cand-info">
+                    <div class="cand-name">James Miller</div>
+                    <div class="cand-role">Backend Engineer</div>
+                  </div>
+                  <div class="cand-score high">87/100</div>
+                </div>
+                <div class="cand-row">
+                  <div class="cand-avatar" style="background:linear-gradient(135deg,#34d399,#10b981)">P</div>
+                  <div class="cand-info">
+                    <div class="cand-name">Priya Sharma</div>
+                    <div class="cand-role">Full Stack Dev</div>
+                  </div>
+                  <div class="cand-score medium">74/100</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE LOGOS ===================== -->
+  <section class="logo-marquee" id="trusted-by">
+    <div class="container">
+      <p class="marquee-label">POWERING HIRING AT LEADING COMPANIES</p>
+    </div>
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <div class="brand-logo">Stripe</div>
+        <div class="brand-logo">Shopify</div>
+        <div class="brand-logo">Notion</div>
+        <div class="brand-logo">Figma</div>
+        <div class="brand-logo">Linear</div>
+        <div class="brand-logo">Vercel</div>
+        <div class="brand-logo">Datadog</div>
+        <div class="brand-logo">Twilio</div>
+        <!-- duplicate for seamless loop -->
+        <div class="brand-logo">Stripe</div>
+        <div class="brand-logo">Shopify</div>
+        <div class="brand-logo">Notion</div>
+        <div class="brand-logo">Figma</div>
+        <div class="brand-logo">Linear</div>
+        <div class="brand-logo">Vercel</div>
+        <div class="brand-logo">Datadog</div>
+        <div class="brand-logo">Twilio</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything you need to<br /><span class="gradient-text">assess talent</span> effectively</h2>
+        <p class="section-desc">From custom test builders to AI-powered cheating detection — HireAssess gives your team every tool needed to evaluate candidates with confidence.</p>
+      </div>
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card reveal-up" style="--delay: 0s" id="feature-ai-scoring">
+          <div class="feature-icon" style="--accent: #3B82F6; --accent-light: #EFF6FF;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M14 3L17.5 10.5L25 12L19.5 17.5L21 25L14 21L7 25L8.5 17.5L3 12L10.5 10.5L14 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="feature-title">AI-Powered Scoring</h3>
+          <p class="feature-desc">Our machine learning models evaluate responses beyond right or wrong — analyzing problem-solving approach, code quality, and thought process.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card reveal-up" style="--delay: 0.1s" id="feature-custom-tests">
+          <div class="feature-icon" style="--accent: #06B6D4; --accent-light: #ECFEFF;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="4" width="22" height="20" rx="3" stroke="currentColor" stroke-width="2" />
+              <path d="M3 10H25" stroke="currentColor" stroke-width="2" />
+              <path d="M10 17L12 19L16 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Custom Test Builder</h3>
+          <p class="feature-desc">Drag-and-drop assessment builder with 15+ question types — coding, MCQ, essay, video response, file upload, and more.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card reveal-up" style="--delay: 0.2s" id="feature-live-coding">
+          <div class="feature-icon" style="--accent: #EC4899; --accent-light: #F0F9FF;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M10 9L4 14L10 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18 9L24 14L18 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16 5L12 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Live Coding Sandbox</h3>
+          <p class="feature-desc">Real-time collaborative coding environment supporting 40+ languages with auto-grading, test cases, and replay functionality.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card reveal-up" style="--delay: 0s" id="feature-proctoring">
+          <div class="feature-icon" style="--accent: #F59E0B; --accent-light: #FFFBEB;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="2" />
+              <circle cx="14" cy="14" r="4" stroke="currentColor" stroke-width="2" />
+              <path d="M14 4V7M14 21V24M4 14H7M21 14H24" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Smart Proctoring</h3>
+          <p class="feature-desc">AI-based cheating detection with webcam monitoring, tab-switch alerts, clipboard blocking, and plagiarism checks — without invading privacy.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+        <!-- Feature 5 -->
+        <div class="feature-card reveal-up" style="--delay: 0.1s" id="feature-analytics">
+          <div class="feature-icon" style="--accent: #10B981; --accent-light: #ECFDF5;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M4 24V16L10 12L16 18L24 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="4" cy="24" r="2" fill="currentColor" />
+              <circle cx="10" cy="12" r="2" fill="currentColor" />
+              <circle cx="16" cy="18" r="2" fill="currentColor" />
+              <circle cx="24" cy="6" r="2" fill="currentColor" />
+            </svg>
+          </div>
+          <h3 class="feature-title">Deep Analytics</h3>
+          <p class="feature-desc">Compare candidates side-by-side, track funnel conversions, and get benchmark reports to continuously improve your hiring pipeline.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card reveal-up" style="--delay: 0.2s" id="feature-integrations">
+          <div class="feature-icon" style="--accent: #3B82F6; --accent-light: #EFF6FF;">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="3" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+              <rect x="17" y="3" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+              <rect x="3" y="17" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+              <rect x="17" y="17" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2" />
+              <path d="M11 7H17M7 11V17M21 11V17M11 21H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="feature-title">50+ Integrations</h3>
+          <p class="feature-desc">Seamlessly connect with your ATS — Greenhouse, Lever, Workday, BambooHR, Slack, Teams, and more. Zero manual data entry.</p>
+          <a href="#" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Get started in <span class="gradient-text">three simple steps</span></h2>
+        <p class="section-desc">From creating your first assessment to making a hire — HireAssess streamlines every step of the evaluation process.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal-up" style="--delay: 0s" id="step-1">
+          <div class="step-number">01</div>
+          <div class="step-visual">
+            <div class="step-illustration step-ill-1">
+              <div class="ill-window">
+                <div class="ill-row"><span class="ill-check"></span><span class="ill-line w60"></span></div>
+                <div class="ill-row"><span class="ill-check"></span><span class="ill-line w80"></span></div>
+                <div class="ill-row"><span class="ill-uncheck"></span><span class="ill-line w50"></span></div>
+                <div class="ill-row"><span class="ill-uncheck"></span><span class="ill-line w70"></span></div>
+              </div>
+            </div>
+          </div>
+          <h3 class="step-title">Create Your Assessment</h3>
+          <p class="step-desc">Pick from 500+ pre-built questions or build custom tests with our drag-and-drop builder. Set time limits, difficulty, and scoring rules.</p>
+        </div>
+        <div class="step-card reveal-up" style="--delay: 0.15s" id="step-2">
+          <div class="step-number">02</div>
+          <div class="step-visual">
+            <div class="step-illustration step-ill-2">
+              <div class="ill-invite">
+                <div class="ill-envelope">
+                  <div class="ill-env-flap"></div>
+                  <div class="ill-env-body">
+                    <span class="ill-line w40" style="margin:0 auto"></span>
+                    <span class="ill-line w60" style="margin:4px auto 0"></span>
+                  </div>
+                </div>
+                <div class="ill-avatars-float">
+                  <div class="ill-dot" style="--x:-20px;--y:-10px;background:#f472b6"></div>
+                  <div class="ill-dot" style="--x:20px;--y:-15px;background:#60a5fa"></div>
+                  <div class="ill-dot" style="--x:0;--y:15px;background:#34d399"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="step-title">Invite Candidates</h3>
+          <p class="step-desc">Share via email, unique link, or integrate directly with your ATS. Candidates get a seamless, branded assessment experience.</p>
+        </div>
+        <div class="step-card reveal-up" style="--delay: 0.3s" id="step-3">
+          <div class="step-number">03</div>
+          <div class="step-visual">
+            <div class="step-illustration step-ill-3">
+              <div class="ill-report">
+                <div class="ill-bars">
+                  <div class="ill-bar" style="--h:90%;--c:#3B82F6"></div>
+                  <div class="ill-bar" style="--h:60%;--c:#22D3EE"></div>
+                  <div class="ill-bar" style="--h:80%;--c:#06B6D4"></div>
+                  <div class="ill-bar" style="--h:45%;--c:#C4B5FD"></div>
+                  <div class="ill-bar" style="--h:95%;--c:#3B82F6"></div>
+                </div>
+                <div class="ill-score-badge">Top 8%</div>
+              </div>
+            </div>
+          </div>
+          <h3 class="step-title">Hire with Confidence</h3>
+          <p class="step-desc">Get instant AI-scored reports, candidate comparisons, and actionable insights to make data-backed hiring decisions fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS BANNER ===================== -->
+  <section class="stats-banner" id="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up" id="stat-companies">
+          <div class="stat-big-number counter" data-target="2500">0</div>
+          <div class="stat-big-label">Companies Trust Us</div>
+        </div>
+        <div class="stat-item reveal-up" style="--delay:0.1s" id="stat-assessments">
+          <div class="stat-big-number counter" data-target="1200000">0</div>
+          <div class="stat-big-label">Assessments Completed</div>
+        </div>
+        <div class="stat-item reveal-up" style="--delay:0.2s" id="stat-time-saved">
+          <div class="stat-big-number">67<span class="stat-unit">%</span></div>
+          <div class="stat-big-label">Avg. Time-to-Hire Reduction</div>
+        </div>
+        <div class="stat-item reveal-up" style="--delay:0.3s" id="stat-satisfaction">
+          <div class="stat-big-number">4.9<span class="stat-unit">/5</span></div>
+          <div class="stat-big-label">Candidate Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Pricing</span>
+        <h2 class="section-title">Plans that <span class="gradient-text">scale with you</span></h2>
+        <p class="section-desc">Start free. Upgrade when you're ready. No hidden fees, cancel anytime.</p>
+      </div>
+      <div class="pricing-toggle reveal-up">
+        <span class="toggle-label active" id="toggle-monthly">Monthly</span>
+        <button class="toggle-switch" id="billing-toggle" aria-label="Toggle billing period">
+          <span class="toggle-thumb"></span>
+        </button>
+        <span class="toggle-label" id="toggle-annual">Annual <span class="save-badge">Save 20%</span></span>
+      </div>
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="pricing-card reveal-up" style="--delay: 0s" id="plan-starter">
+          <div class="plan-header">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-desc">For small teams getting started</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-amount" data-monthly="49" data-annual="39">$49</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Up to 50 assessments/mo
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              5 team members
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              200+ question library
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Basic analytics
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Email support
+            </li>
+          </ul>
+          <a href="#" class="btn-outline btn-block" id="plan-starter-cta">Get Started</a>
+        </div>
+        <!-- Pro -->
+        <div class="pricing-card popular reveal-up" style="--delay: 0.1s" id="plan-pro">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-header">
+            <h3 class="plan-name">Pro</h3>
+            <p class="plan-desc">For growing teams that need more</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-amount" data-monthly="129" data-annual="99">$129</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Unlimited assessments
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              25 team members
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              500+ question library
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              AI scoring & proctoring
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Live coding sandbox
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ATS integrations
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Priority support
+            </li>
+          </ul>
+          <a href="#" class="btn-primary btn-block" id="plan-pro-cta">Start Free Trial</a>
+        </div>
+        <!-- Enterprise -->
+        <div class="pricing-card reveal-up" style="--delay: 0.2s" id="plan-enterprise">
+          <div class="plan-header">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">For large orgs with custom needs</p>
+          </div>
+          <div class="plan-price">
+            <span class="price-amount">Custom</span>
+            <span class="price-period">&nbsp;</span>
+          </div>
+          <ul class="plan-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Everything in Pro
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Unlimited team members
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Custom question library
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              SSO / SAML authentication
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Dedicated success manager
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              SLA & uptime guarantee
+            </li>
+          </ul>
+          <a href="#" class="btn-outline btn-block" id="plan-enterprise-cta">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Loved by <span class="gradient-text">HR teams everywhere</span></h2>
+        <p class="section-desc">See why thousands of hiring teams rely on HireAssess to find their next great hire.</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal-up" style="--delay: 0s" id="testimonial-1">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"HireAssess cut our screening time by 70%. The AI scoring is incredibly accurate — it catches nuances we used to miss in manual reviews. Absolutely game-changing for our eng hiring."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#3B82F6,#06B6D4)">AR</div>
+            <div>
+              <div class="author-name">Ava Richardson</div>
+              <div class="author-role">VP of Engineering, Nextera</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up" style="--delay: 0.1s" id="testimonial-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"We went from 3 different tools to just HireAssess. The all-in-one platform with live coding, proctoring, and analytics is exactly what we needed. Our candidates love the experience too."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#f472b6,#ec4899)">MK</div>
+            <div>
+              <div class="author-name">Marcus Kim</div>
+              <div class="author-role">Head of Talent, Cloudbridge</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up" style="--delay: 0.2s" id="testimonial-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The integration with Greenhouse was seamless. Now our recruiters can send assessments directly from the ATS and results flow back automatically. Saved us 15+ hours per week."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#34d399,#10b981)">LS</div>
+            <div>
+              <div class="author-name">Lily Santos</div>
+              <div class="author-role">HR Director, FinLedger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-section" id="cta">
+    <div class="cta-bg-shapes">
+      <div class="cta-shape cta-shape-1"></div>
+      <div class="cta-shape cta-shape-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content reveal-up">
+        <h2 class="cta-title">Ready to transform your hiring?</h2>
+        <p class="cta-desc">Join 2,500+ companies using HireAssess to hire smarter. Start your free 14-day trial — no credit card required.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn-white btn-lg" id="cta-final-start">
+            Start Free Trial
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#" class="btn-ghost-white btn-lg" id="cta-final-demo">Talk to Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#logo-grad-f)" />
+                <path d="M10 16L14 20L22 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                <defs>
+                  <linearGradient id="logo-grad-f" x1="0" y1="0" x2="32" y2="32">
+                    <stop stop-color="#3B82F6" />
+                    <stop offset="1" stop-color="#06B6D4" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text">HireAssess</span>
+          </a>
+          <p class="footer-tagline">AI-powered talent assessment platform that helps companies hire smarter, faster, and fairer.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Twitter" class="social-link" id="social-twitter">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 18L8.5 11.5M8.5 11.5L2 2H6.5L11 8M8.5 11.5L13.5 18H18L11 8M11 8L18 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link" id="social-linkedin">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 9V14M10 14V11C10 9.5 11.5 9 12.5 9.5C13 9.75 13 10.5 13 11V14M6 6.5H6.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="#" aria-label="GitHub" class="social-link" id="social-github">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C5.58 2 2 5.58 2 10C2 13.54 4.29 16.53 7.47 17.59C7.87 17.66 8 17.42 8 17.21V15.63C5.73 16.13 5.26 14.55 5.26 14.55C4.89 13.63 4.35 13.38 4.35 13.38C3.6 12.87 4.4 12.88 4.4 12.88C5.23 12.94 5.66 13.73 5.66 13.73C6.4 14.97 7.57 14.59 8.03 14.39C8.1 13.85 8.33 13.47 8.58 13.26C6.78 13.05 4.89 12.3 4.89 9.29C4.89 8.42 5.21 7.71 5.68 7.15C5.6 6.93 5.32 6.12 5.76 5.03C5.76 5.03 6.46 4.79 8 5.82C8.68 5.63 9.34 5.53 10 5.53C10.66 5.53 11.32 5.63 12 5.82C13.54 4.79 14.24 5.03 14.24 5.03C14.68 6.12 14.4 6.93 14.32 7.15C14.79 7.71 15.11 8.42 15.11 9.29C15.11 12.31 13.21 13.04 11.41 13.25C11.72 13.51 12 14.02 12 14.8V17.21C12 17.42 12.13 17.67 12.54 17.59C15.72 16.53 18 13.54 18 10C18 5.58 14.42 2 10 2Z" stroke="currentColor" stroke-width="1.2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Question Library</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Resources</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Status Page</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HireAssess, Inc. All rights reserved.</p>
+        <p>Made with ♥ for better hiring</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
